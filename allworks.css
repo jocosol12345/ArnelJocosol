@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+  
+::-webkit-scrollbar {
+    display: none;
+}
+  
+html {
+    scroll-behavior: smooth;
+}
+  
+body {
+    background-image: linear-gradient(to left, #2A5470, #4C4177);
+}
+  
+.container {
+    width: 100%;
+    height: 100vh;
+}
+.container button{
+    margin: 20px 0 0 24px;
+    height: 40px;
+    width: 100px;
+    font-size: 1rem;
+    border-radius: 5px;
+    color: white;
+    background-color: #2B3A55;
+    box-shadow: #E94560 1px 1px 1px 1px;
+}
+.container button:hover{
+    background-color:#2A5470;
+    cursor: pointer;
+}
+.container .works{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .works img{
+    width: 80%;
+    height: 60vh;
+}
+.container h2{
+    color: white;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+.container p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+@media screen and (min-width: 769px) and (max-width: 1380px){
+    .container button{
+        height: 35px;
+        width: 80px;
+    }
+    .container  .works img{
+        width: 70%;
+        height: 55vh;
+    }
+    .container h2{
+        font-size: 2rem;
+        margin-top: .5rem;
+    }
+    .container p{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 768px){
+    .container button{
+        height: 30px;
+        width: 70px;
+    }
+    .container .works img{
+        width: 65%;
+        height: 55vh;
+    }
+    .container h2{
+        font-size: 1.8rem ;
+        margin-top: .2rem;
+    }
+    .container p{
+        font-size: 1rem;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .container button{
+        height: 20px;
+        width: 50px;
+    }
+    .container .works img{
+        width: 90%;
+        height: 50vh;
+    }
+    .container h2{
+        font-size: 1.8rem ;
+        margin-top: .2rem;
+    }
+    .container p{
+        font-size: 1rem;
+        margin-left: 2rem ;
+        margin-right: 2rem;
+    }
+}
